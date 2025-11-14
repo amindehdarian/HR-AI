@@ -49,7 +49,6 @@ This section explains how HR-relevant features are structured and how an attriti
 Understanding this pipeline is essential for **People Analytics, HRIS, or product roles** focused on turning workforce data into insights.
 
 ---
-
 ### 2.1 Feature Representation
 
 The employee dataset includes `n_samples` individuals and `n_features` numerical workforce indicators, such as:
@@ -71,9 +70,6 @@ In code:
 ```python
 X = torch.randn(n_samples, n_features)
 
-Each row corresponds to one employee; each column corresponds to one HR-related predictor.
-
----
 
 ### 2.2 Latent Relationship Between Features and Attrition
 
