@@ -71,6 +71,7 @@ In code:
 X = torch.randn(n_samples, n_features)
 
 
+
 ### 2.2 Latent Relationship Between Features and Attrition
 
 To demonstrate how predictive modeling identifies patterns, the project constructs an underlying relationship between employee characteristics and the probability of leaving the organization. This mirrors real-world scenarios where employee behavior is influenced by multiple workforce factors.
