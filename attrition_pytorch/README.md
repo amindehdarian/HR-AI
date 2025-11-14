@@ -180,6 +180,7 @@ class AttritionNet(nn.Module):
         x = torch.relu(self.fc1(x))
         x = torch.sigmoid(self.fc2(x))
         return x
+```
 
 ## 3.3 Training Procedure
 
