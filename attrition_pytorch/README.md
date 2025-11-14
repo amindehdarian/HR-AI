@@ -69,7 +69,7 @@ In code:
 
 ```python
 X = torch.randn(n_samples, n_features)
-
+```
 
 
 ### 2.2 Latent Relationship Between Features and Attrition
@@ -88,12 +88,15 @@ These assumptions are encoded through an internal set of weights and a logistic 
 weights_true = torch.tensor([...])
 logits = X @ weights_true + noise
 probs = torch.sigmoid(logits)
+```
+
 The transformation from `logits` to `probs` produces a value between **0 and 1** for each employee, which can be interpreted as an estimated attrition probability.
 
 To generate attrition labels (`0` = stay, `1` = leave), we map these probabilities into binary outcomes:
 
 ```python
 y = torch.bernoulli(probs).long()
+```
 
 This produces an attrition outcome for every employee that mirrors the structure of turnover indicators typically stored in HR Information Systems.
 
